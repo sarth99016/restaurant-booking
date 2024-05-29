@@ -10,5 +10,5 @@
 ##### Img
 ##### Name of Res, Star Raiting, Cuisine, Dilevery Time
 ## Footer
-### Copyrighg
+### Copyright
 
