@@ -13,9 +13,9 @@
 .nav-items > ul{
     display: flex;
     list-style-type: none;
-    padding: 0px 30px;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .nav-items > ul > li{
@@ -67,10 +67,9 @@
 
 .res-details > ul{
     display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
     list-style-type: none;
-    font-size: 1.25rem;
-    padding-top: 1rem;
-    flex-wrap: wrap;
 }
 
 .search-container{
