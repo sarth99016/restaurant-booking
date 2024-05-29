@@ -22,6 +22,7 @@
     padding: 10px;
     margin: 10px;
     cursor: pointer;
+    
 }
 
 .restaurant-card{
@@ -66,10 +67,10 @@
 
 .res-details > ul{
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 5px;
     list-style-type: none;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .search-container{
