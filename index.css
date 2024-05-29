@@ -26,6 +26,7 @@ body{
     padding: 10px;
     margin: 10px;
     cursor: pointer;
+    
 }
 
 
@@ -87,5 +88,10 @@ body{
     display: flex;
     border: 1px solid black;
     padding: 10px;
+<<<<<<< HEAD
     justify-content: center;
 }
+=======
+    text-align: center;
+}
+>>>>>>> 9591f881869a4d8c9bdcc90b7928706d63e51000
