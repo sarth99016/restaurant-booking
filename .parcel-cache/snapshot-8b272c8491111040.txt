@@ -55,7 +55,7 @@
 112C:\React Learning\Episode-1\node_modules\@parcel\transformer-postcss\node_modules\@parcel\utils\src\ansi-html.js133614307202020373 0
 102C:\React Learning\Episode-1\node_modules\@parcel\transformer-svg\node_modules\semver\classes\semver.js133614307307701423 0
 68C:\React Learning\Episode-1\node_modules\fast-levenshtein\LICENSE.md133613544406821913 0
-38C:\React Learning\Episode-1\.gitignore133614856690912431 0
+38C:\React Learning\Episode-1\.gitignore133615601062514514 0
 72C:\React Learning\Episode-1\node_modules\caniuse-lite\data\regions\IT.js133613544555131874 0
 61C:\React Learning\Episode-1\node_modules\lodash\_baseSlice.js133613544523501835 0
 97C:\React Learning\Episode-1\node_modules\@babel\helper-validator-identifier\lib\identifier.js.map133613544462781903 0
@@ -72,7 +72,7 @@
 61C:\React Learning\Episode-1\node_modules\lodash\fp\memoize.js133613544563431863 0
 111C:\React Learning\Episode-1\node_modules\@parcel\optimizer-htmlnano\node_modules\cosmiconfig\dist\defaults.d.ts133614307317401149 0
 117C:\React Learning\Episode-1\node_modules\@parcel\runtime-browser-hmr\node_modules\@parcel\utils\src\getCertificate.js133614307254130219 0
-32C:\React Learning\Episode-1\dist133615598762060635 1
+32C:\React Learning\Episode-1\dist133615608120608884 1
 37C:\React Learning\Episode-1\index.css133615574352805850 0
 45C:\React Learning\Episode-1\utils\mockData.js133615598757363885 0
 70C:\React Learning\Episode-1\node_modules\xmlchars\xmlns\1.0\ed3.js.map133613544425811923 0
@@ -130,7 +130,7 @@
 93C:\React Learning\Episode-1\node_modules\jsdom\lib\jsdom\browser\resources\resource-loader.js133613544471841971 0
 63C:\React Learning\Episode-1\node_modules\optionator\lib\util.js133613544421741887 0
 79C:\React Learning\Episode-1\node_modules\nwsapi\src\modules\nwsapi-traversal.js133613544398601840 0
-46C:\React Learning\Episode-1\utils\constants.js133615595457534185 0
+46C:\React Learning\Episode-1\utils\constants.js133615608117888815 0
 113C:\React Learning\Episode-1\node_modules\@parcel\optimizer-htmlnano\node_modules\glob\dist\commonjs\glob.d.ts.map133614307255710210 0
 86C:\React Learning\Episode-1\node_modules\@parcel\codeframe\node_modules\supports-color133614307169560238 1
 109C:\React Learning\Episode-1\node_modules\@parcel\transformer-posthtml\node_modules\@parcel\utils\src\index.js133614307319641132 0
@@ -186,7 +186,7 @@
 103C:\React Learning\Episode-1\node_modules\@parcel\packager-html\node_modules\dom-serializer\lib\index.js133614307132252022 0
 135C:\React Learning\Episode-1\node_modules\@parcel\optimizer-htmlnano\node_modules\postcss-svgo\node_modules\css-tree\cjs\syntax\function133614307355550007 1
 105C:\React Learning\Episode-1\node_modules\@swc\helpers\esm\_class_check_private_static_field_descriptor.js133614307343511151 0
-38C:\React Learning\Episode-1\src\app.js133615575409865845 0
+38C:\React Learning\Episode-1\src\app.js133615601441167636 0
 63C:\React Learning\Episode-1\node_modules\lodash.memoize\LICENSE133613544420321836 0
 57C:\React Learning\Episode-1\node_modules\lodash\fp\any.js133613544545291895 0
 62C:\React Learning\Episode-1\node_modules\lodash\_baseFilter.js133613544502301944 0
@@ -218,7 +218,7 @@
 53C:\React Learning\Episode-1\node_modules\bcrypt-pbkdf133613544403851888 1
 60C:\React Learning\Episode-1\node_modules\lodash\_baseSome.js133613544523581851 0
 111C:\React Learning\Episode-1\node_modules\uncss\node_modules\postcss-selector-parser\dist\__tests__\universal.js133613544501161942 0
-60C:\React Learning\Episode-1\src\components\RestaurantCard.js133615596804361352 0
+60C:\React Learning\Episode-1\src\components\RestaurantCard.js133615601665943759 0
 146C:\React Learning\Episode-1\node_modules\@parcel\optimizer-htmlnano\node_modules\postcss-svgo\node_modules\css-tree\cjs\definition-syntax\walk.cjs133614307355839902 0
 130C:\React Learning\Episode-1\node_modules\@parcel\transformer-posthtml\node_modules\posthtml\node_modules\posthtml-parser\readme.md133614307195720341 0
 63C:\React Learning\Episode-1\node_modules\postcss\lib\warning.js133613544500551896 0
@@ -16958,5 +16958,5 @@
 51C:\React Learning\Episode-1\dist\index.9e4c6fd2.css133615598510182433 0
 55C:\React Learning\Episode-1\dist\index.9e4c6fd2.css.map133615598510382354 0
 43C:\React Learning\Episode-1\dist\index.html133615598515270547 0
-50C:\React Learning\Episode-1\dist\index.0641b553.js133615598761730625 0
-54C:\React Learning\Episode-1\dist\index.0641b553.js.map133615598762020681 0
+50C:\React Learning\Episode-1\dist\index.0641b553.js133615608120368937 0
+54C:\React Learning\Episode-1\dist\index.0641b553.js.map133615608120588954 0
