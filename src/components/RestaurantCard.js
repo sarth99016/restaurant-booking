@@ -19,8 +19,9 @@ const RestaurantCard = (props) => {
         <div className="res-name">
           <h3>{name}</h3>
         </div>
+        <div className="add-details-restaurant">
         <div className="res-cuisine">
-          <h5>{cuisines.join(", ")}</h5>
+          <h6>{cuisines.join(", ")}</h6>
         </div>
         <div className="res-details">
           <ul>
@@ -28,6 +29,7 @@ const RestaurantCard = (props) => {
             <li className="res-del-time">{deliveryTime} min</li>
             <li className="res-price">{costForTwoString}</li>
           </ul>
+        </div>
         </div>
       </div>
     </div>
