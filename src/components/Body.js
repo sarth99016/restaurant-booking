@@ -1,9 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import restaurant from "../../utils/mockData";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Body = () => {
-
   const [resList, setResList] = useState(restaurant);
   console.log(restaurant);
   console.log(resList);
@@ -13,11 +12,23 @@ const Body = () => {
         <input type="text" placeholder="Enter Restaurant"></input>
         <button>Submit</button>
       </div>
+      <div className="sort-revert">
+        <div className="sort-btn">
+          <button
+            onClick={() =>
+              setResList(() =>
+                resList.filter((rest) => rest.data.avgRating > 4)
+              )
+            }
+          >
+            Sort By 4 ⭐
+          </button>
+        </div>
 
-      <div className="sort-btn">
-        <button onClick = {() => setResList(() => resList.filter(rest => rest.data.avgRating > 4))}>Sort By 4 ⭐</button>
+        <div className="revert-btn">
+          <button onClick={() => setResList(restaurant)}>Revert ⭐</button>
+        </div>
       </div>
-
       <div className="res-container">
         {/* {
                 (() => {

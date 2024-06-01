@@ -92,3 +92,22 @@ body{
     text-align: center;
 }
 
+.sort-revert{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sort-btn > button {
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.revert-btn > button{
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+}
