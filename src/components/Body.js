@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import restaurant from "../../utils/mockData";
 import React, { useState, useEffect } from "react";
+import { LOADING_ICON } from "../../utils/constants";
 
 const Body = () => {
   useEffect(() => {
@@ -9,11 +10,18 @@ const Body = () => {
     const fetchData = async() => {const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5571413&lng=88.3727143&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
     const json = await data.json();
     console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-    setResList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+    setResList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   };
-  const [resList, setResList] = useState(restaurant);
-  console.log(restaurant);
-  console.log(resList);
+  const [resList, setResList] = useState([]);
+  // console.log(restaurant);
+  // console.log(resList);
+  if(resList.length==0){
+    return (
+      <div className=".loading-img-div">
+      <img className="loading-img" src={LOADING_ICON} />
+      </div>
+    )
+  }
   return (
     <div className="body">
       <div className="search-container">

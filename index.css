@@ -63,8 +63,18 @@ body{
     padding: 10px;
 }
 
-.res-img{
-    /* width: 100%; */
+.loading-img-div{
+    display: flex; /* Use flex display */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Optionally, set a height to center vertically */
+}
+
+.loading-img{
+    display: block;
+  margin: 30px auto;
+  width: 50px;
+
 }
 
 .res-img > img{
