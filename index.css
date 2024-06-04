@@ -62,9 +62,16 @@ body{
     justify-content:space-evenly;
     padding: 10px;
 }
+
+.res-img{
+    /* width: 100%; */
+}
+
 .res-img > img{
-    max-width: 100%;
-    height: 200px;
+        width: 100%;
+        height: 250px;
+      
+      
 }
 
 .res-info > .res-name, .res-cuisine{

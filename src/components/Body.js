@@ -1,8 +1,16 @@
 import RestaurantCard from "./RestaurantCard";
 import restaurant from "../../utils/mockData";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Body = () => {
+  useEffect(() => {
+    fetchData();},[])
+
+    const fetchData = async() => {const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5571413&lng=88.3727143&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
+    const json = await data.json();
+    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    setResList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+  };
   const [resList, setResList] = useState(restaurant);
   console.log(restaurant);
   console.log(resList);
@@ -17,11 +25,11 @@ const Body = () => {
           <button
             onClick={() =>
               setResList(() =>
-                resList.filter((rest) => rest.data.avgRating > 4)
+                resList.filter((rest) => rest.info.avgRating > 4.5)
               )
             }
           >
-            Sort By 4 ⭐
+            Sort By 4.5 ⭐
           </button>
         </div>
 
@@ -39,9 +47,8 @@ const Body = () => {
                     return restaurantCards;
                 })()
         } */}
-        {resList.map((restData, index) => (
-          <RestaurantCard key={restData.data.id} restData={restData} />
-        ))}
+        {resList.map((restData, index) => (<RestaurantCard key={restData.info.id} restData={restData} />
+))}
       </div>
     </div>
   );
