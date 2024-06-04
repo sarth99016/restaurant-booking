@@ -90,11 +90,19 @@ body{
 
 .res-details > ul{
     display: flex;
-    justify-content: space-between;
-    padding: 1.2rem;
+    justify-content: space-around;
+     padding: 1.0rem; 
     list-style-type: none;
+    width: 90%;
 }
 
+.res-details > ul > li{
+    margin-top: -20px;
+    padding: 5px;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+    font-size: 0.85rem;
+}
 .search-container{
     margin: 10px;
     padding: 10px;
@@ -163,3 +171,26 @@ body{
     background-color: #f0f0f0;
 }
 
+.shimmer-card:hover{
+    box-shadow: 5px 5px 10px rgb(228, 214, 214);
+}
+
+.login-logout-btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.00rem;
+    width: 100px;
+    border: none;
+    background-color: white;
+}
+
+.login-logout-btn:hover{
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.sort-rvrt-btn{
+    display: flex;
+    justify-content: flex-end;
+}
