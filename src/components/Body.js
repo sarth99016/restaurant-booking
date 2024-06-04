@@ -1,10 +1,15 @@
 import RestaurantCard from "./RestaurantCard";
-import restaurant from "../../utils/mockData";
+// import restaurant from "../../utils/mockData";
 import React, { useState, useEffect } from "react";
 import { LOADING_ICON } from "../../utils/constants";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
+  //Whenever there is change in state cariable, react triggers a reconciliateion cycle(re-renders the component)
+  const [resList, setResList] = useState([]);
+  const [originalResList, setOriginalResList] = useState([]);
+  const [searchText, setSearchText] = useState("");
+
   // console.log("Body rendered!!");
 
   useEffect(() => {
@@ -23,15 +28,10 @@ const Body = () => {
     const restaurants =
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
-    var originalResList = restaurants;
     setResList(restaurants);
-    setOriginalResList(originalResList);
+    setOriginalResList(restaurants);
   };
 
-  //Whenever there is change in state cariable, react triggers a reconciliateion cycle(re-renders the component)
-  const [resList, setResList] = useState([]);
-  const [originalResList, setOriginalResList] = useState([]);
-  const [searchText, setSearchText] = useState("");
   // console.log(restaurant);
   // console.log(resList);
 
