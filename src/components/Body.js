@@ -12,8 +12,9 @@ const Body = () => {
   }, []);
   // Instal CORS Plug-in for cross origin request, since we're requesting from different origin it'll fail to bypass that
   const fetchData = async () => {
+    // bypassed cors policy using corsproxy.io
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5571413&lng=88.3727143&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5571413&lng=88.3727143&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     console.log(
