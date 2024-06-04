@@ -5,7 +5,7 @@ import { LOADING_ICON } from "../../utils/constants";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-// console.log("Body rendered!!");
+  // console.log("Body rendered!!");
 
   useEffect(() => {
     fetchData();
@@ -30,7 +30,7 @@ const Body = () => {
   //Whenever there is change in state cariable, react triggers a reconciliateion cycle(re-renders the component)
   const [resList, setResList] = useState([]);
   const [originalResList, setOriginalResList] = useState([]);
-  const [searchText, setSearchText] = useState("")
+  const [searchText, setSearchText] = useState("");
   // console.log(restaurant);
   // console.log(resList);
 
@@ -47,16 +47,28 @@ const Body = () => {
   ) : (
     <div className="body">
       <div className="search-container">
-        <input type="text" placeholder="Enter Restaurant" value={searchText} onChange={(e) => setSearchText(e.target.value)}></input> 
-        <button onClick={
-          //Filter Cards On Search and update the UI
-          () => {
-            console.log(searchText)
-            console.log(resList)
-            const filteredResList = resList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
-            setResList(filteredResList)
-            // console.log(searchText)
-          }}>Search</button>
+        <input
+          type="text"
+          placeholder="Enter Restaurant"
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+        ></input>
+        <button
+          onClick={
+            //Filter Cards On Search and update the UI
+            () => {
+              console.log(searchText);
+              console.log(resList);
+              const filteredResList = originalResList.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setResList(filteredResList);
+              // console.log(searchText)
+            }
+          }
+        >
+          Search
+        </button>
       </div>
       <div className="sort-rvrt-btn">
         <div className="sort-revert">
