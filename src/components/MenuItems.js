@@ -51,7 +51,9 @@ const MenuItems = (props) => {
       </div>
       </div>
       <div className="menu-dish-img">
-        <img src={IMG_URI + imageId}></img>
+        {/* <img src={IMG_URI + imageId}></img> */}
+        {imageId? <img src={IMG_URI + imageId} alt={name} /> : "" }
+
       </div>
     </div>
   );

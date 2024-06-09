@@ -54,8 +54,8 @@ const Body = () => {
           onClick={
             //Filter Cards On Search and update the UI
             () => {
-              console.log(searchText);
-              console.log(resList);
+              // console.log(searchText);
+              // console.log(resList);
               const filteredResList = originalResList.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );

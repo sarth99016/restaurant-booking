@@ -41,9 +41,11 @@ const RestaurantMenu = () => {
 
   return (
     <div>
+      <div className="menu-heading">
       <h1>{name}</h1>
       <h2>Menu</h2>
       <h3>{costForTwoMessage}</h3>
+      </div>
       {/* {console.log(itemCards)} */}
       {itemCards.map((itemCard, index) => (
         <div key={itemCard.card.info.id}>
