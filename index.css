@@ -226,6 +226,8 @@ ul > li > a:hover{
 
 .menu-item-desc-div{
     max-width: 100%;
+    max-height: 200px;
+    overflow: auto;
 }
 
 .item-desc{
@@ -233,8 +235,3 @@ ul > li > a:hover{
     flex-direction: column;
 }
 
-@media (max-width: 800px){
-.menu-item-des{
-    font-size: 0.75rem;
-}
-}
