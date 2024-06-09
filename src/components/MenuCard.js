@@ -1,35 +1,3 @@
-/* Sample Data
-"info": {
-"id": "77777585",
-"name": "Orange & Walnut Tea Cake",
-"category": "Tea Cakes",
-"description": "Serves 1 | A soft, moist, and decadent cake with a generous helping of orange and walnut. A perfect dessert for those with a sweet tooth.\nsize : 800 gms",
-"imageId": "869440c5b05e6a272a60f1f5da08fb3b",
-"inStock": 1,
-"price": 136190,
-"variants": {},
-"variantsV2": {},
-"itemAttribute": {
-"vegClassifier": "EGG",
-"portionSize": "Serves 1"
-},
-"ribbon": {},
-"showImage": true,
-"itemBadge": {},
-"badgesV2": {},
-"ratings": {
-"aggregatedRating": {
-"rating": "4.7",
-"ratingCount": "29 ratings",
-"ratingCountV2": "29"
-}
-}
-},
-"analytics": {},
-"hideRestaurantDetails": true
-}
-*/
-
 import { IMG_URI } from "../../utils/constants";
 
 const MenuItems = (props) => {
@@ -46,8 +14,8 @@ const MenuItems = (props) => {
         <h3>₹{(price || defaultPrice) / 100}</h3>
       </div>
       <div className="rating">{ratings.aggregatedRating.rating?ratings.aggregatedRating.rating + " ⭐" : ""} {ratings.aggregatedRating.ratingCountV2? "( "+ ratings.aggregatedRating.ratingCountV2 + " ratings)": "" }  </div>
-      <div className="resDesc">
-        <p>{description}</p>
+      <div className="menu-item-desc-div">
+        <p className="menu-item-des">{description}</p>
       </div>
       </div>
       <div className="menu-dish-img">
