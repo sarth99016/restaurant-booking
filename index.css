@@ -194,3 +194,8 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+
+.res-container > a{
+    text-decoration: none;
+    color: #000;
+}
