@@ -99,7 +99,7 @@ const Body = () => {
                 })()
         } */}
         {resList.map((restData, index) => (
-          <Link to="/restaurants/123"><RestaurantCard key={restData.info.id} restData={restData} /></Link>
+          <Link to={"/restaurants/"+restData.info.id}><RestaurantCard key={restData.info.id} restData={restData} /></Link>
         ))}
       </div>
     </div>

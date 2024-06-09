@@ -195,7 +195,26 @@ body{
     justify-content: flex-end;
 }
 
-.res-container > a{
+.res-container > a, ul > li > a{
     text-decoration: none;
     color: #000;
 }
+
+ul > li > a:hover{
+    color: rgb(79, 104, 152);
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.menu-item > .menu-dish-img > img{
+        height: 200px;
+        width: 220px;
+        object-fit: cover;
+        padding-top: 25px;
+    } 

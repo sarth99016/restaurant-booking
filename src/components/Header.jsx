@@ -22,7 +22,7 @@ const Header = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li>Add to 🛒</li>
+          <li><Link to="/">Add to 🛒</Link></li>
           <button
             onClick={() =>
               loginLogOutBton === "Login"
