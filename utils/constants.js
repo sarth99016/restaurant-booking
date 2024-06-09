@@ -5,6 +5,6 @@ export const IMG_URI =
 export const LOADING_ICON =
   "https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif";
 export const RESTAURANT_LIST_URL =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5571413&lng=88.3727143&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6460176&lng=77.3695166&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 export const RESTAURANT_MENU_URL =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.5571413&lng=88.3727143&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6460176&lng=77.3695166&restaurantId=";
